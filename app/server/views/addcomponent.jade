@@ -1,0 +1,150 @@
+extends layout
+
+block content
+    nav.navbar.navbar-default
+        .container-fluid
+            .navbar-header
+                a.navbar-brand(href='https://mysunglow.com/') SunGlow
+                ul.nav.navbar-nav
+                    li
+                        a(href='/home') Home
+                    li.active
+                        a(href='/addcomponent') Add Component
+                    li
+                        a(href='/viewcomponents') View Components
+                    li
+                        a(href='/orderdata') View Orders
+
+
+
+
+    .container
+        .row
+            .col-sm-4
+                h1 Add new controller
+                form.form-inline(action='/addcontroller',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='Name' required)
+                    .form-group
+                        input#Tmax.form-control(type='number', placeholder='Tmax', name='Tmax' required)
+                    .form-group
+                        input#minWidth.form-control(type='number', placeholder='Min Width', name='minWidth' required)
+                    .form-group
+                        input#type.form-control(type='text', placeholder='Type', name='type' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='Image Path', name='imagePath' required)
+                    button.btn.btn-default(type='submit') Add Controll
+            .col-sm-4
+                    h1 Add new Hem
+                    form.form-inline(action='/addhem',method='post')
+                        .form-group
+                            input#hemType.form-control(type='text', placeholder='Hem Type', name='hemType' required)
+                        .form-group
+                            input#WspH.form-control(type='number', placeholder='WspH', name='WspH' required)
+                        .form-group
+                            input#Finishes.form-control(type='text', placeholder='Finishes', name='finishes' required)
+                        .form-group
+                            input#imagePath.form-control(type='text', placeholder='Image Path', name='imagePath' required)
+                        button.btn.btn-default(type='submit') Add Hem
+            .col-sm-4
+                    h1 Add new Valance
+                    form.form-inline(action='/addvalance',method='post')
+                        .form-group
+                            input#name.form-control(type='text', placeholder='Name', name='name' required)
+                        .form-group
+                            input#Dcs.form-control(type='number', placeholder='DCS', name='Dcs' required)
+                        .form-group
+                            input#Finishes.form-control(type='text', placeholder='Finishes', name='finishes' required)
+                        .form-group
+                            input#imagePath.form-control(type='text', placeholder='Image Path', name='imagePath' required)
+                        button.btn.btn-default(type='submit') Add Valance
+
+    .container
+        .row
+
+            .col-sm-4
+                h1 Add new Fabric
+                form.form-inline(action='/addfabric',method='post')
+                    .form-group
+                        input#FabricDescription.form-control(type='text', placeholder='Fabric Description', name='FabricDescription' required)
+                    .form-group
+                        input#RollWidth.form-control(type='number', placeholder='Roll Width', name='RollWidth' required)
+                    .form-group
+                        input#RailroadableRR.form-control(type='text', placeholder='RailroadableRR', name='RailroadableRR' required)
+                    .form-group
+                        input#WspF.form-control(type='number', placeholder='WspF', name='WspF' required)
+                    .form-group
+                        input#ThicknessTk.form-control(type='number', placeholder='Thickness', name='ThicknessTk' required)
+                    .form-group
+                        input#Tadm.form-control(type='number', placeholder='Tadm', name='Tadm' required)
+                    .form-group
+                        input#BlindType.form-control(type='text', placeholder='Blind Type', name='BlindType' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Fabric
+            .col-sm-4
+                h1 Add new Trim
+                form.form-inline(action='/addtrim',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='name' required)
+                    .form-group
+                        input#Collection.form-control(type='text', placeholder='Collection', name='collection' required)
+                    .form-group
+                        input#Colors.form-control(type='text', placeholder='Colors', name='colors' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Trim
+            .col-sm-4
+                h1 Add new Pull
+                form.form-inline(action='/addpull',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='name' required)
+                    .form-group
+                        input#Collection.form-control(type='text', placeholder='Collection', name='collection' required)
+                    .form-group
+                        input#Colors.form-control(type='text', placeholder='Colors', name='colors' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Pull
+
+    .container
+        .row
+            .col-sm-4
+                h1 Add new Motorized Control Type
+                form.form-inline(action='/addmotorizedcontroltype',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='name' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Motorized Control Type
+            .col-sm-4
+                h1 Add new Power Option
+                form.form-inline(action='/addpoweroption',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='name' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Power Option
+            .col-sm-4
+                h1 Add new Remote Option
+                form.form-inline(action='/addremoteoption',method='post')
+                    .form-group
+                        input#Name.form-control(type='text', placeholder='Name', name='name' required)
+                    .form-group
+                        input#imagePath.form-control(type='text', placeholder='image Path', name='imagePath' required)
+                    
+                    button.btn.btn-default(type='submit') Add Remote Option
+
+block scripts
+    
+    script(src='/vendor/jquery-2.2.3.min.js')
+    script(src='/vendor/jquery.form.min.js')
+    script(src='/vendor/bootstrap.min.js')
+
+    script(src='/sunglow/css/materialize.css')
+    script(src='/sunglow/css/materialize.min.css')

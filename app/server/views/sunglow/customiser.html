@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Customise Your Blind</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="sunglow/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="sunglow/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="https://mysunglow.com/" class="brand-logo">SUNGLOW</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Back</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="background-image: url('sunglow/img/back.jpg');">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text" id="title">Customize your Blinds</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">It's time to bring your unique sense of style to your window.</h5>
+      </div>
+      
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+
+      
+      <div class="card-panel z-depth-5" id="config">
+        <div class="row">
+              <div class="col s12 m7">
+                <div class="icon-block">
+  
+                      <h2 class="header">Configuration</h2>
+                              <div class="card horizontal">
+                                  
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      
+  
+                                      <div class="row">
+                                        <form class="col s12">
+                                          <div class="row">
+                                            <div class="input-field col m6">
+                                              <i class="material-icons prefix" style="font-size:30px">border_horizontal</i>
+                                              <input id="width" type="text" class="validate">
+                                              <label>Width:</label>
+                                            </div>
+                                            <div class="input-field col m6">
+                                              <i class="material-icons prefix" style="font-size:30px">border_vertical</i>
+                                              <input id="height" type="tel" class="validate">
+                                              <label>Height</label>
+                                            </div>
+
+                                            <div class="input-field col m12" id="fabricsDiv">
+                                             
+                                            </div>
+                                            <div class="input-field col m12" style="margin-bottom:20px;" id="controllT">
+                                             <p>select Controll type</p>
+                                             <a class="waves-effect waves-light btn" onclick="clutchSelected()">clutch</a>
+                                             <a class="waves-effect waves-light btn" onclick="neoSelected()">neo</a>
+                                             <a class="waves-effect waves-light btn" onclick="motorSelected()">motor</a>
+                                            </div>
+
+                                            <div class="input-field col m12" id="controllsSelectClutch" style="display:none">
+                                             
+                                            </div>
+                                            <div class="input-field col m12" id="controllsSelectNeo" style="display:none">
+                                             
+                                              </div>
+                                              <div class="input-field col m12" id="controllsSelectMotor" style="display:none">
+                                             
+                                                </div>
+
+                                            <div class="input-field col  m6" id="valanceDiv">
+                                                
+                                            </div>
+
+                                            <div class="input-field col m6" id="hemDiv">
+                                              
+                                            </div>
+
+                                            <div class="input-field col m6" id="trimDiv">
+
+                                            </div>
+
+                                            <div class="input-field col m6" id="pullDiv">
+                                            
+                                            </div>
+                                          
+
+                                            
+
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+
+                                
+                </div>
+
+                
+              </div>
+
+              
+              
+      
+              <div class="col s12 m5">
+                <div class="icon-block">
+                      <h2 class="header">Results</h2>
+  
+                      <div class="card horizontal">
+                              
+                               <div class="card-stacked">
+                                 <div class="card-content" style="min-height: 398px;">
+
+                                  <p id="result0"> Choose a configuration for your blind than click continue order.</p>
+                                  <br>
+                                  <p id="result1"></p>
+                                  <br>
+                                  <p id="result2"></p>
+                                  <br>
+                                  <p id="result3"></p>
+                                  <br>
+                                  <p id="result4"></p>
+                                  <br>
+                                  <p id="result5"></p>
+                                  <br>
+                                  <p id="result6"></p>
+                                  <br>
+                                  <p id="result7"></p>
+                                  <br>
+                                  <p id="result8"></p>
+                                  <br>
+                                  <p id="result9"></p>
+                                  
+  
+                                  
+                                 </div>
+                                 <div class="card-action">
+                                   <a href="#" id="continueOrder" onclick="results();return false;">Continue Order</a>
+                                 </div>
+                               </div>
+                             </div>
+                      
+                                         
+                 
+                </div>
+              </div>
+      
+              
+            </div>
+          </div>
+    
+      <div class="card-panel z-depth-5" id="config2" style="display:none;">
+      <div class="row">
+        <div class="col s12 m5">
+          <div class="icon-block ">
+
+                <img src="sunglow/img/preview-example.PNG" width="100%"  class="z-depth-2" alt="shade preview">
+           
+          </div>
+        </div>
+
+        <div class="col s12 m7">
+          <div class="icon-block ">
+            
+            
+
+            <ul class="collapsible popout collapsible-accordion z-depth-5" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header "><i class="material-icons">subtitles</i>Colours and Finishes</div>
+                      <div class="collapsible-body"><div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            
+                              <div class="input-field col  s6" id="trimColor"> </div>
+
+                              <div class="input-field col s6" id="pullColor"></div>
+
+                              <div class="input-field col s6" id="valanceFinish"></div>
+
+                              <div class="input-field col s6" id="hemFinish"></div>
+
+                          </div>
+                        </form>
+                      </div></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header "><i class="material-icons">games</i>Controll Options</div>
+                      <div class="collapsible-body"><div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            
+                              <div class="input-field col m6">
+                                  <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="RTS (Wireless Control)">RTS (Wireless Control)</option>
+                                    <option value="Non-RTS (Wired Control)">Non-RTS (Wired Control)</option>
+                                    <option value="SDN 2.0 (Intelligent Control)">SDN 2.0 (Intelligent Control)</option>
+                                  </select>
+                                  <label>Motorized Controll Type</label>
+                                </div>
+
+                                <div class="input-field col m6">
+                                    <select>
+                                      <option value="" disabled selected>Choose your option</option>
+                                      <option value="1">Option 1</option>
+                                      <option value="2">Option 2</option>
+                                      <option value="3">Option 3</option>
+                                    </select>
+                                    <label>Power Option</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                      <select>
+                                        <optgroup label="Sun Glow Remote Control">
+                                          <option value="1">1-Channel Standard</option>
+                                          <option value="2">1-Channel Touch</option>
+                                          <option value="3">15-Channel Standard</option>
+                                          <option value="4">15-Channel Touch</option>
+                                        </optgroup>
+                                        <optgroup label="remote 2">
+                                          <option value="3">Option 3</option>
+                                          <option value="4">Option 4</option>
+                                        </optgroup>
+                                      </select>
+                                      <label>Remote Optioons</label>
+                                    </div>
+                                    <div class="input-field col m12">
+                                        <select class="icons">
+                                          <option value="" disabled selected>Choose your option</option>
+                                          <option value="1" data-icon="images/sample-1.jpg" class="left circle">SG Rechargeable 12V</option>
+                                          <option value="2" disabled data-icon="images/office.jpg" class="left circle">SG Rechargeable 8V</option>
+                                          <option value="3" data-icon="images/yuna.jpg" class="left circle">Somfy R28 Wirefree</option>
+                                          <option value="4" disabled data-icon="images/office.jpg" class="left circle">Somfy Sonesse 30 Wirefree</option>
+                                          <option value="5" data-icon="images/yuna.jpg" class="left circle">Somfy Sonesse 30 RTS</option>
+                                          <option value="6" disabled data-icon="images/office.jpg" class="left circle">Somfy Sonesse Ultra 50 RTS</option>
+                                          <option value="7" data-icon="images/yuna.jpg" class="left circle">Somfy Sonesse 50 RTS</option>
+                                        </select>
+                                        <label>Motor Option</label>
+                                      </div>
+
+                          </div>
+                        </form>
+                      </div></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">library_books</i>Mounting Options</div>
+                      <div class="collapsible-body"><div class="row">
+                        <form class="col s12">
+                          <div class="row">
+
+                              <div class="input-field col m6">
+                                  <select disabled>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                                  <label>Side Channels</label>
+                                </div>
+                                <div class="input-field col m6">
+                                    <select disabled>
+                                      <option value="" disabled selected>Choose your option</option>
+                                      <option value="1">finish 1</option>
+                                      <option value="2">finish 2</option>
+                                      <option value="3">finish 3</option>
+                                    </select>
+                                    <label>Side Channels Finish</label>
+                                  </div>
+
+                                  <div class="input-field col m6">
+                                      <select >
+                                        <option value="" disabled selected>Select Mounting Option</option>
+                                        <option value="1">Ceiling</option>
+                                        <option value="2">Wall</option>
+                                        <option value="3">Lateral</option>
+                                      </select>
+                                      <label>Mounting Type</label>
+                                    </div>
+
+                                    <div class="input-field col m6">
+                                        <select >
+                                          <option value="" disabled selected>Select Dimension Type</option>
+                                          <option value="1">Tight</option>
+                                          <option value="2">Finish</option>
+                                          <option value="3">Cloth</option>
+                                        </select>
+                                        <label>Dimension Type</label>
+                                      </div>
+
+                                      <div class=" col m6">
+                                        <label>Operation Side</label>
+                                        <div class="switch">
+                                            <label>
+                                              left
+                                              <input type="checkbox">
+                                              <span class="lever"></span>
+                                              right
+                                            </label>
+                                          </div>
+                                        
+                                      </div>
+
+                                      <div class=" col m6">
+                                          <label>Railroading Preference</label>
+                                          <div class="switch">
+                                              <label>
+                                                no
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                yes
+                                              </label>
+                                            </div>
+                                          
+                                        </div>
+
+                                    <div class="col m6">
+                                        <label>Hold Down Brackets</label>
+                                    
+                                        <div class="switch">
+                                            <label>
+                                              no
+                                              <input type="checkbox">
+                                              <span class="lever"></span>
+                                              yes
+                                            </label>
+                                          </div>
+                                      </div>
+
+                                      <div class=" col m6">
+                                          <label>Roll Direction</label>
+                                          <div class="switch">
+                                              <label>
+                                                Standard
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Reverse
+                                              </label>
+                                            </div>
+                                          
+                                        </div>
+                          </div>
+                        </form>
+                      </div></div>
+                    </li>
+                    
+                   
+
+                          
+                             
+                  </ul>
+          </div>
+        </div>
+
+        
+      </div>
+      </div>
+
+
+      <div class="card-panel z-depth-5">
+      <div class="row">
+            <div class="col s12 m5">
+              <div class="icon-block">
+
+                    <h2 class="header">Total Order</h2>
+                            <div class="card horizontal">
+                                
+                                <div class="card-stacked">
+                                  <div class="card-content">
+                                    
+
+                                    <ul class="collection with-header" id="totalOrderList">
+                                            
+
+                                            
+                                          </ul>
+
+                                          <div class="row">
+                                            <div class="input-field col s12">
+                                              <input id="blind-name" type="text" class="validate">
+                                              <label for="blind-name">Discount Code</label>
+                                            </div>
+
+                                            <div class="input-field col s12">
+                                              <input id="email-name" type="text" class="validate">
+                                              <label for="email-name">Email</label>
+
+                                              
+                                            </div>
+                                            
+                                          </div>
+                                  </div>
+                                  <div class="card-action">
+                                    <a href="/" class="btn-large waves-effect waves-light orange">Finish Order</a>
+                                  </div>
+                                </div>
+                              </div>
+              </div>
+            </div>
+    
+            <div class="col s12 m7">
+              <div class="icon-block">
+                    <h2 class="header">Current Line</h2>
+
+                    <div class="card horizontal">
+                            
+                             <div class="card-stacked">
+                               <div class="card-content">
+                                 
+
+                                 <table class="highlight">
+                                        <thead>
+                                          <tr>
+                                              <th></th>
+                                              <th data-field="id" style="font-size:1vw;">Width</th>
+                                              <th data-field="name" style="font-size:1vw;">Height</th>
+                                              <th data-field="price" style="font-size:1vw;">Fabric</th>
+                                              <th data-field="price" style="font-size:1vw;">Trim</th>
+                                              <th data-field="price" style="font-size:1vw;">Valance</th>
+                                              <th data-field="price" style="font-size:1vw;">Hem</th>
+                                          </tr>
+                                        </thead>
+                                          <tbody> 
+                                          <tr>
+                            <td><strong style="font-size:1vw;">Value</strong></td>
+                            <td><code style="font-size:1vw;"><p id="widthResult" >NA</p></code></td>
+                            <td><code style="font-size:1vw;"><p id="heightResult">NA</p> </code></td>
+                            <td><code style="font-size:1vw;"><p id="fabricResult">NA</p></code></td>
+                            <td><code style="font-size:1vw;"><p id="trimResult">NA</p></code></td>
+                            <td><code  style="font-size:1vw;"><p id="valanceResult">NA</p></code></td>
+                            <td><code style="font-size:1vw;"><p id="hemResult">NA</p></code></td>
+                                          </tr>
+                                          <tr>
+                                            <td><strong style="font-size:1vw;">Finish</strong></td>
+                                            <td style="font-size:1vw;">/</td>
+                                            <td style="font-size:1vw;">/</td>
+                                            <td style="font-size:1vw;"><p id="fabricFinish">NA</p></td>
+                                          <td style="font-size:1vw;"><p id="trimFinishResult">NA</p></td>
+                                        <td style="font-size:1vw;"><p id="valanceFinishResult">NA</p></td>
+                                        <td style="font-size:1vw;"><p id="hemFinishResult">NA</p></td>
+                                          </tr>
+                                         
+                                        </tbody>
+                                      </table>
+
+                                 <form class="col s12">
+
+                       
+                                      
+                                        
+                                        
+                                        <div class="row">
+                                          <div class="input-field col s12">
+                                            <input id="blindID" type="text" class="validate">
+                                            <label for="blindID">Blind ID</label>
+                                          </div>
+                                          <div class="input-field col s12">
+                                            <input id="blindQuantity" type="number" class="validate">
+                                            <label for="blindQuantity">Quantity</label>
+                                          </div>
+                                        </div>
+                                        
+                                      </form>
+                               </div>
+                               <div class="card-action">
+                                 <a onclick="addToOrder()" href="#">Add to order</a>
+                               </div>
+                             </div>
+                           </div>
+                    
+                                       
+               
+              </div>
+            </div>
+    
+            
+          </div>
+        </div>
+
+    </div>
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">The classic simplicity and functionality of roller shades has made them popular in many applications whether residential, commercial or institutional. With a wide range of fabric, control systems, valance options, hem options and custom accents, roller shades could be designed to suit most applications</p>
+
+
+        </div>
+        
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="https://devokit.com/">DevoKit</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="sunglow/js/materialize.js"></script>
+  <script src="sunglow/js/init.js"></script>
+<script>$(document).ready(function() {
+  $('select').material_select();
+});
+
+
+  </script>
+
+
+<script src="sunglow/js/data.js"></script>
+
+<script src="sunglow/js/custom.js"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,189 @@
+
+extends layout
+
+
+    
+
+block content
+
+
+    nav.navbar.navbar-default
+        .container-fluid
+            .navbar-header
+                a.navbar-brand(href='https://mysunglow.com/') SunGlow
+                ul.nav.navbar-nav
+                    li
+                        a(href='/home') Home
+                    li
+                        a(href='/addcomponent') Add Component
+                    li
+                        a(href='/viewcomponents') View Components
+                    li.active
+                        a(href='/orderdata') View Orders
+
+
+
+    h1 Orders
+    div(style = "background-color:white;")
+        p Email:  testemail@gmail.com
+        p Discount Code:  ABC123
+        - for (var i = 0; i < orderData.length; i++)
+            table.table.table-bordered.table-striped
+                thead
+                    tr
+                        th Blind Id 
+                        th Quantity
+                        th Date Created
+                        th Width
+                        th Height
+                        th Fabric
+                        th Valance
+                        th Hem
+                        th Trim
+                        th Pull
+                        th Trim Color 
+                        th Pull Color
+                        th Valance Finish
+                        th Hem Finish
+                        th Motorized Control Option
+                        th Remote Option
+                        th Motor Option
+                        th Mounting Type
+                        th Dimension Type
+                        th Wsph
+                        th Wspt
+                        th MoI
+                        th Tube Radius
+                        th Dcs
+                        th Wspf
+                        th Tadm
+                        th Fabric Thickness
+                        th Tmax
+                        th Min Width
+                        th Deflection Coeficient
+                        th Torque
+                        th Rud
+                        th Lval
+                        th WmaxT
+                        th LmaxT
+                tbody
+                    tr
+                        td= orderData[i].email 
+                        td= orderData[i].discountCode
+                        td= orderData[i].dateCreated
+                        td= orderData[i].width
+                        td= orderData[i].height
+                        td= orderData[i].fabric
+                        td= orderData[i].valance
+                        td= orderData[i].hem
+                        td= orderData[i].trim
+                        td= orderData[i].pulls
+                        td= orderData[i].trimColor
+                        td= orderData[i].pullColor
+                        td= orderData[i].valanceFinish
+                        td= orderData[i].hemFinish
+                        td= orderData[i].motorizedControlOption
+                        td= orderData[i].remoteOptions
+                        td= orderData[i].motorOption
+                        td= orderData[i].mountingType
+                        td= orderData[i].dimensionType
+                        td= orderData[i].wsph
+                        td= orderData[i].wspt
+                        td= orderData[i].momentOfInertia
+                        td= orderData[i].radius
+                        td= orderData[i].dcs
+                        td= orderData[i].wspf
+                        td= orderData[i].tadm
+                        td= orderData[i].fabricThickness
+                        td= orderData[i].tmax
+                        td= orderData[i].minWidth
+                        td= orderData[i].deflectionCoeficient
+                        td= orderData[i].torque
+                        td= orderData[i].rud
+                        td= orderData[i].lval
+                        td= orderData[i].wmaxt
+                        td= orderData[i].lmaxt
+                    
+    div(style = "background-color:white;")
+        p Email:  testemail@gmail.com
+        p Discount Code:  ABC123
+        - for (var i = 0; i < orderData.length; i++)
+            table.table.table-bordered.table-striped
+                thead
+                    tr
+                        th Blind Id 
+                        th Quantity
+                        th Date Created
+                        th Width
+                        th Height
+                        th Fabric
+                        th Valance
+                        th Hem
+                        th Trim
+                        th Pull
+                        th Trim Color 
+                        th Pull Color
+                        th Valance Finish
+                        th Hem Finish
+                        th Motorized Control Option
+                        th Remote Option
+                        th Motor Option
+                        th Mounting Type
+                        th Dimension Type
+                        th Wsph
+                        th Wspt
+                        th MoI
+                        th Tube Radius
+                        th Dcs
+                        th Wspf
+                        th Tadm
+                        th Fabric Thickness
+                        th Tmax
+                        th Min Width
+                        th Deflection Coeficient
+                        th Torque
+                        th Rud
+                        th Lval
+                        th WmaxT
+                        th LmaxT
+                tbody
+                    tr
+                        td= orderData[i].email 
+                        td= orderData[i].discountCode
+                        td= "Friday, May 24, 2018"
+                        td= orderData[i].width
+                        td= orderData[i].height
+                        td= orderData[i].fabric
+                        td= orderData[i].valance
+                        td= orderData[i].hem
+                        td= orderData[i].trim
+                        td= orderData[i].pulls
+                        td= orderData[i].trimColor
+                        td= orderData[i].pullColor
+                        td= orderData[i].valanceFinish
+                        td= orderData[i].hemFinish
+                        td= orderData[i].motorizedControlOption
+                        td= orderData[i].remoteOptions
+                        td= orderData[i].motorOption
+                        td= orderData[i].mountingType
+                        td= orderData[i].dimensionType
+                        td= orderData[i].wsph
+                        td= orderData[i].wspt
+                        td= orderData[i].momentOfInertia
+                        td= orderData[i].radius
+                        td= orderData[i].dcs
+                        td= orderData[i].wspf
+                        td= orderData[i].tadm
+                        td= orderData[i].fabricThickness
+                        td= orderData[i].tmax
+                        td= orderData[i].minWidth
+                        td= orderData[i].deflectionCoeficient
+                        td= orderData[i].torque
+                        td= orderData[i].rud
+                        td= orderData[i].lval
+                        td= orderData[i].wmaxt
+                        td= orderData[i].lmaxt   
+block scripts
+    script(src='/js/views/viewcomponents.js')
+    script(src='/vendor/jquery-2.2.3.min.js')
+    script(src='/vendor/jquery.form.min.js')

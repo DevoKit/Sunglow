@@ -1,0 +1,281 @@
+
+extends layout
+
+
+
+block content
+    nav.navbar.navbar-default
+        .container-fluid
+            .navbar-header
+                a.navbar-brand(href='https://mysunglow.com/') SunGlow
+                ul.nav.navbar-nav
+                    li
+                        a(href='/home') Home
+                    li
+                        a(href='/addcomponent') Add Component
+                    li.active
+                        a(href='/viewcomponents') View Components
+                    li
+                        a(href='/orderdata') View Orders
+
+
+
+    h1 Controlls
+    table.table.table-bordered.table-striped#Controlls
+        thead
+            tr
+                th Remove
+                th Name
+                th Tmax
+                th ImagePath
+                th Min Width
+                th Type
+                th Accepted Tubes
+                th Not accepted Valances
+        tbody
+        - for (var i = 0; i < controlls.length; i++)
+            tr(id="controll"+i)
+                td
+                    button(class = i onclick='deleteControllsRow(this)') X
+                td= controlls[i].Name
+                td= controlls[i].Tmax
+                td= controlls[i].imagePath
+                td= controlls[i].minWidth
+                td= controlls[i].type
+                td #{controlls[i].acceptedTubes.join(", ")}
+                td #{controlls[i].notAcceptedValances.join(", ")}
+
+    script.
+        function deleteControllsRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deleteControll',
+                type: 'POST',
+                data: {controllDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed controll at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+    h1#Hems Hems
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th Remove
+                th Name
+                th Wsph
+                th Image Path
+                th Finish
+                
+        tbody
+        - for (var i = 0; i < hems.length; i++)
+            tr(id="hem"+i)
+                td
+                    button(class = i onclick='deleteHemsRow(this)') X
+                td= hems[i].hemType
+                td= hems[i].WspH
+                td= hems[i].imagePath
+                td #{hems[i].finishes}
+
+    script.
+        function deleteHemsRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deleteHem',
+                type: 'POST',
+                data: {hemDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed hem at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+ 
+    h1#Valances Valances
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th Remove
+                th Name
+                th DCS
+                th Image Path
+                th Finishes
+                
+        tbody
+        - for (var i = 0; i < valances.length; i++)
+            tr(id="valance"+i)
+                td
+                    button(class = i onclick='deleteValancesRow(this)') X
+                td= valances[i].name
+                td= valances[i].Dcs
+                td= valances[i].imagePath
+                td #{valances[i].finishes.join(", ")}
+
+    script.
+        function deleteValancesRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deleteValance',
+                type: 'POST',
+                data: {valanceDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed hem at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+    h1#Tubes Tubes
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th Tube Type
+                th Tube Radius
+                th WSPT
+                th Momment of Inertia
+                
+        tbody
+        - for (var i = 0; i < tubes.length; i++)
+            tr(id="tube"+i)
+                td= tubes[i].TubeType
+                td= tubes[i].TubeRadius
+                td= tubes[i].WspT
+                td= tubes[i].MomentofInertia
+
+    h1#Fabrics Fabrics
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th remove
+                th Fabric Description
+                th Roll Width
+                th RailroadableRR
+                th WSPF
+                th Thickness
+                th TADM
+                th Blind Type
+                th imagePath
+                
+        tbody
+        - for (var i = 0; i < fabrics.length; i++)
+            tr(id="fabric"+i)
+                td
+                    button(class = i onclick='deleteFabricsRow(this)') X
+                td= fabrics[i].FabricDescription
+                td= fabrics[i].RollWidth
+                td= fabrics[i].RailroadableRR
+                td= fabrics[i].WspF
+                td= fabrics[i].ThicknessTk
+                td= fabrics[i].Tadm
+                td= fabrics[i].BlindType
+                td= fabrics[i].imagePath
+    script.
+        function deleteFabricsRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deleteFabric',
+                type: 'POST',
+                data: {fabricDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed hem at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+
+    h1#Trims Trims
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th remove
+                th Name
+                th Collection
+                th Colors
+                th Image Path
+                
+        tbody
+        - for (var i = 0; i < trims.length; i++)
+            tr(id="fabric"+i)
+                td
+                    button(class = i onclick='deleteTrimsRow(this)') X
+                td= trims[i].name
+                td= trims[i].collection
+                td #{trims[i].colors.join(", ")}
+                td= trims[i].imagePath
+    script.
+        function deleteTrimsRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deleteTrims',
+                type: 'POST',
+                data: {trimDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed Trim at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+
+
+    h1#Pulls Pulls
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                th remove
+                th Name
+                th Collection
+                th Colors
+                th Image Path
+                
+        tbody
+        - for (var i = 0; i < pulls.length; i++)
+            tr(id="fabric"+i)
+                td
+                    button(class = i onclick='deletePullsRow(this)') X
+                td= pulls[i].name
+                td= pulls[i].collection
+                td #{pulls[i].colors.join(", ")}
+                td= pulls[i].imagePath
+    script.
+        function deletePullsRow(btn)
+        {
+            var row = btn.parentNode.parentNode;
+            
+            $.ajax({
+                url:'/deletePulls',
+                type: 'POST',
+                data: {pullDeleteIndex: Number(row.rowIndex)},
+                success: alert("Sucesfully removed Trim at index" + row.rowIndex),
+                error: function(jqXHR){
+                console.log(jqXHR.responseText+' :: '+jqXHR.statusText);
+                                        }
+                
+            });
+            row.parentNode.removeChild(row);
+        }
+
+
+block scripts
+    script(src='/js/views/viewcomponents.js')
+    script(src='/vendor/jquery-2.2.3.min.js')
+    script(src='/vendor/jquery.form.min.js')

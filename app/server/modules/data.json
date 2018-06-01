@@ -1,0 +1,613 @@
+{
+  "Controlls": [
+    {
+      "Name": "R8",
+      "Tmax": 4.5,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.125,
+        1.5
+      ],
+      "notAcceptedValances": [],
+      "type": "clutch"
+    },
+    {
+      "Name": "R16",
+      "Tmax": 12,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 6,
+      "acceptedTubes": [
+        1.5,
+        2,
+        2.5
+      ],
+      "notAcceptedValances": [
+        "Decore 8",
+        "Decore 12"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "R24",
+      "Tmax": 18,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 7,
+      "acceptedTubes": [
+        1.5,
+        2,
+        2.5
+      ],
+      "notAcceptedValances": [
+        "Decore 8",
+        "Decore 12"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "SL10",
+      "Tmax": 6.25,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.125,
+        1.5,
+        2
+      ],
+      "notAcceptedValances": [
+        "Decore 12"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "SL20",
+      "Tmax": 15,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 6,
+      "acceptedTubes": [
+        1.5,
+        2,
+        2.5
+      ],
+      "notAcceptedValances": [
+        "Decore 8",
+        "Decora 12"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "SL30",
+      "Tmax": 22.5,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 6,
+      "acceptedTubes": [
+        1.125,
+        1.5,
+        2
+      ],
+      "notAcceptedValances": [
+        "Decore 8",
+        "Decora 12"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "Neo1",
+      "Tmax": 1.5,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 21,
+      "acceptedTubes": [
+        1
+      ],
+      "notAcceptedValances": [
+        "Decora 12"
+      ],
+      "type": "neo"
+    },
+    {
+      "Name": "Neo1.5",
+      "Tmax": 6.5,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 32,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [],
+      "type": "neo"
+    },
+    {
+      "Name": "S",
+      "Tmax": 20,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 32,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [
+        "Decora 8"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "STD",
+      "Tmax": 10,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 6,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [
+        "Decora 8"
+      ],
+      "type": "clutch"
+    },
+    {
+      "Name": "mini",
+      "Tmax": 3,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5,
+        2
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "R28",
+      "Tmax": 9.73,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5,
+        2
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "S30 Batt",
+      "Tmax": 17.7,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5,
+        2
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "SGRM8",
+      "Tmax": 6.2,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "SGRM12",
+      "Tmax": 17.7,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "S30",
+      "Tmax": 17.7,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5
+      ],
+      "notAcceptedValances": [],
+      "type": "motor"
+    },
+    {
+      "Name": "S50DC",
+      "Tmax": 53,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    },
+    {
+      "Name": "404",
+      "Tmax": 35,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    },
+    {
+      "Name": "406",
+      "Tmax": 53,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    },
+    {
+      "Name": "504",
+      "Tmax": 35,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "3 inch Fascia",
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    },
+    {
+      "Name": "506",
+      "Tmax": 53,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "3 inch Fascia",
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    },
+    {
+      "Name": "510",
+      "Tmax": 88,
+      "imagePath": "img/preview-example.png",
+      "minWidth": 5,
+      "acceptedTubes": [
+        2,
+        2.5,
+        3
+      ],
+      "notAcceptedValances": [
+        "3 inch Fascia",
+        "Decora 8",
+        "Decora 12"
+      ],
+      "type": "motor"
+    }
+  ],
+  "hems": [
+    {
+      "hemType": "Plain Hem",
+      "WspH": 0.014478,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "hemType": "Slim Bar",
+      "WspH": 0.010978,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "hemType": "Interlude",
+      "WspH": 0.025666,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "hemType": "Illusion",
+      "WspH": 0.011867,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "hemType": "test",
+      "WspH": "1",
+      "finishes": [
+        "one",
+        "two",
+        "three"
+      ],
+      "imagePath": "test"
+    }
+  ],
+  "valances": [
+    {
+      "name": "3 inch Fascia",
+      "Dcs": 2.7,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "4 inch Fascia",
+      "Dcs": 3.8,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Decora 8",
+      "Dcs": 2.1,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Decora 12",
+      "Dcs": 2.5,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Decora 12 il",
+      "Dcs": 2.6,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Decora 16",
+      "Dcs": 3,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Vision 84",
+      "Dcs": 2.7,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Vision 102",
+      "Dcs": 3.7,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    },
+    {
+      "name": "Neo",
+      "Dcs": 2.9,
+      "imagePath": "img/preview-example.png",
+      "finishes": [
+        "plain",
+        "Delux",
+        "Chrome"
+      ]
+    }
+  ],
+  "tubes": [
+    {
+      "TubeType": 1,
+      "TubeRadius": 0.49,
+      "WspT": 0.0011,
+      "MomentofInertia": 0.01
+    },
+    {
+      "TubeType": 1.125,
+      "TubeRadius": 0.6,
+      "WspT": 0.0206,
+      "MomentofInertia": 0.03
+    },
+    {
+      "TubeType": 1.5,
+      "TubeRadius": 0.78,
+      "WspT": 0.0287,
+      "MomentofInertia": 0.063
+    },
+    {
+      "TubeType": 2,
+      "TubeRadius": 1.12,
+      "WspT": 0.0574,
+      "MomentofInertia": 0.33
+    },
+    {
+      "TubeType": 2.5,
+      "TubeRadius": 1.21,
+      "WspT": 0.0713,
+      "MomentofInertia": 0.48
+    },
+    {
+      "TubeType": 3,
+      "TubeRadius": 1.5,
+      "WspT": 0.1041,
+      "MomentofInertia": 0.98
+    }
+  ],
+  "fabrics": [
+    {
+      "FabricDescription": "test",
+      "RollWidth": "1",
+      "RailroadableRR": "true",
+      "WspF": "1",
+      "ThicknessTk": "1",
+      "Tadm": "1",
+      "BlindType": "test",
+      "imagePath": "test"
+    },
+    {
+      "FabricDescription": "test2",
+      "RollWidth": "1",
+      "RailroadableRR": "true",
+      "WspF": "1",
+      "ThicknessTk": "1",
+      "Tadm": "1",
+      "BlindType": "1",
+      "imagePath": "1"
+    }
+  ],
+  "trims": [
+    {
+      "name": "Delux Trim1",
+      "collection": "collection1",
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "imagePath": "img/preview-example.png"
+    },
+    {
+      "name": "Delux Trim2",
+      "collection": "collection2",
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "imagePath": "img/preview-example.png"
+    },
+    {
+      "name": "Delux Trim3",
+      "collection": "collection3",
+      "colors": [
+        "red",
+        "white",
+        "silver"
+      ],
+      "imagePath": "img/preview-example.png"
+    }
+  ],
+  "pulls": [
+    {
+      "name": "Delux Pulls1",
+      "collection": "Delux",
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "imagePath": "img/preview-example.png"
+    },
+    {
+      "name": "Delux Pulls2",
+      "collection": "Delux",
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "imagePath": "img/preview-example.png"
+    },
+    {
+      "name": "Delux Pulls3",
+      "collection": "Delux",
+      "colors": [
+        "red",
+        "white",
+        "blue"
+      ],
+      "imagePath": "img/preview-example.png"
+    }
+  ],
+  "motorizedControlType": [
+    {
+      "name": "RTS wireless control"
+    },
+    {
+      "name": "RTS wireless control"
+    },
+    {
+      "name": "RTS wireless control"
+    }
+  ],
+  "powerOption": [
+    {
+      "name": "power Option 1"
+    },
+    {
+      "name": "power Option 2"
+    },
+    {
+      "name": "power Option 3"
+    }
+  ],
+  "remoteOptions": [
+    {
+      "name": "remote Option 1"
+    },
+    {
+      "name": "remote Option 2"
+    },
+    {
+      "name": "remote Option 3"
+    }
+  ]
+}
