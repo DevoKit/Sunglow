@@ -1,9 +1,5 @@
 
-/**
-	* Node.js Login Boilerplate
-	* More Info : http://kitchen.braitsch.io/building-a-login-system-in-node-js-and-mongodb/
-	* Copyright (c) 2013-2016 Stephen Braitsch
-**/
+
 
 var http = require('http');
 var express = require('express');
@@ -34,7 +30,7 @@ var dbName = process.env.DB_NAME || 'node-login';
 var dbURL = 'mongodb://'+dbHost+':'+dbPort+'/'+dbName;
 if (app.get('env') == 'live'){
 // prepend url with authentication credentials // 
-	dbURL = 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASS+'@'+dbHost+':'+dbPort+'/'+dbName;
+	dbURL = process.env.MONGODB_URI
 }
 
 
