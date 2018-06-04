@@ -23,16 +23,7 @@ app.use(express.static(__dirname + '/app/public'));
 
 // build mongo database connection url //
 
-var dbHost = process.env.DB_HOST || 'localhost'
-var dbPort = process.env.DB_PORT || 27017;
-var dbName = process.env.DB_NAME || 'node-login';
-
-var dbURL = 'mongodb://'+dbHost+':'+dbPort+'/'+dbName;
-if (app.get('env') == 'live'){
-// prepend url with authentication credentials // 
-	dbURL = process.env.MONGODB_URI
-}
-
+var dbURL = 'mongodb://user1:password1@ds019882.mlab.com:19882/sunglow'
 
 app.use(session({
 	secret: 'faeb4453e5d14fe6f6d04637f78077c76c73d1b4',
